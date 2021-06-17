@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BodaBoda registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+  
+  </head>
+  <body>  
+    <div class="main-block">
+      <form name="register" action="#" id="form"> 
+        <div class="title">
+          <h2>KamuKamu Boda Registration Form</h2>
+        </div>
+        <div class="info">
+               
+                <input type="text" name="df" placeholder="Destination From" required>
+                <input type="text" name="dt" placeholder="Destination To" required>
+                <input type="text" name="tod" placeholder="Time of Departure" onclick="(this.type='time')" required> 
+                <input type="text" name="toa" placeholder="Time of Arrival"  onclick="(this.type='time')" required>
+                <input type="text" name="temperature" placeholder="Temperature" required> 
+               <input class="fname" type="text" name="clientName" id="name" placeholder="Enter your Name" required>
+               <input type="text" name="telephone"  placeholder="Phone number" required > 
+               
+           <select>
+            <option id="gender">Gender</option>
+            <option >Female</option>
+            <option >Male</option>
+           </select>
+           <small id="error"></small>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox"><span>Have you Been Vaccinated?</span>
+        </div>
+        <button type="submit" >Submit</button>
+      </form>
+     
+      <span class="copyright">&copy;Designed by Group1.</span>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
+© 2021 GitHub, Inc.
